@@ -1,3 +1,20 @@
+# 实验地图与完整图集
+
+[方法](research.zh.md) · [核心证据](evidence.zh.md) · [代码导航](code-map.zh.md) · [English](experiments.en.md)
+
+26组公开图按下表阅读。图组不等于独立实验；同一实验可能有主图与补充图。全部数值来自开发资料，图示中的示例路径不代表实测。
+
+| 主题 | 图组（点击打开SVG） |
+|---|---|
+| 研究主线 | [fig01_motivation](../figures/zh/fig01_motivation.svg), [fig02_workflow](../figures/zh/fig02_workflow.svg), [supp01_protocol](../figures/zh/supp01_protocol.svg) |
+| 基线与标签 | [fig03_baselines](../figures/zh/fig03_baselines.svg), [exp01_baseline_landscape](../figures/zh/exp01_baseline_landscape.svg), [exp05_label_precision](../figures/zh/exp05_label_precision.svg), [exp07_sample_selection](../figures/zh/exp07_sample_selection.svg) |
+| 联合与更新 | [fig04_dependence](../figures/zh/fig04_dependence.svg), [exp02_joint_evidence](../figures/zh/exp02_joint_evidence.svg), [supp02_dependence_design](../figures/zh/supp02_dependence_design.svg), [supp03_updates](../figures/zh/supp03_updates.svg), [exp08_update_diagnostics](../figures/zh/exp08_update_diagnostics.svg) |
+| 校准与缺测 | [exp03_missing_inputs](../figures/zh/exp03_missing_inputs.svg), [exp04_rolling_calibration](../figures/zh/exp04_rolling_calibration.svg), [exp06_residual_calibration](../figures/zh/exp06_residual_calibration.svg), [supp04_robustness](../figures/zh/supp04_robustness.svg) |
+| 执行与证据 | [fig05_execution](../figures/zh/fig05_execution.svg), [exp09_cost_service](../figures/zh/exp09_cost_service.svg), [exp10_resource_information](../figures/zh/exp10_resource_information.svg), [exp11_support_failures](../figures/zh/exp11_support_failures.svg), [exp12_cost_identification](../figures/zh/exp12_cost_identification.svg), [supp05_cost_service](../figures/zh/supp05_cost_service.svg) |
+| 补录与工程 | [fig06_acquisition](../figures/zh/fig06_acquisition.svg), [exp14_package_value](../figures/zh/exp14_package_value.svg), [exp15_scenario_reduction](../figures/zh/exp15_scenario_reduction.svg), [exp16_solver_stability](../figures/zh/exp16_solver_stability.svg) |
+
+<!-- EXPERIMENT_NAV_END -->
+
 ## 完整基线与历史长度
 
 自然输入、refit64校准下全部九家族。(a)仅已观测小时CRPS点值。(b)相同行序的全体Brier界。(c)预定3/7日历史及7日结构敏感性。880起报、17机组、偏移0/24/48/66h。神经模型三生产种子，统计基线单生产者配固定秩模板，均为开发对照，非选冠军。

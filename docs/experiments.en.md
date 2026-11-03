@@ -1,3 +1,20 @@
+# Experiment map and full figure atlas
+
+[Methods](research.en.md) · [Evidence](evidence.en.md) · [Code map](code-map.en.md) · [中文](experiments.zh.md)
+
+Read the 26 public figure sets by theme below. Figure sets are not independent experiments; one experiment may have main and supplementary views. Empirical values use development data; illustrative paths are not observations.
+
+| Theme | Figure sets (open SVG) |
+|---|---|
+| Research narrative | [fig01_motivation](../figures/en/fig01_motivation.svg), [fig02_workflow](../figures/en/fig02_workflow.svg), [supp01_protocol](../figures/en/supp01_protocol.svg) |
+| Baselines and labels | [fig03_baselines](../figures/en/fig03_baselines.svg), [exp01_baseline_landscape](../figures/en/exp01_baseline_landscape.svg), [exp05_label_precision](../figures/en/exp05_label_precision.svg), [exp07_sample_selection](../figures/en/exp07_sample_selection.svg) |
+| Dependence and updates | [fig04_dependence](../figures/en/fig04_dependence.svg), [exp02_joint_evidence](../figures/en/exp02_joint_evidence.svg), [supp02_dependence_design](../figures/en/supp02_dependence_design.svg), [supp03_updates](../figures/en/supp03_updates.svg), [exp08_update_diagnostics](../figures/en/exp08_update_diagnostics.svg) |
+| Calibration and outages | [exp03_missing_inputs](../figures/en/exp03_missing_inputs.svg), [exp04_rolling_calibration](../figures/en/exp04_rolling_calibration.svg), [exp06_residual_calibration](../figures/en/exp06_residual_calibration.svg), [supp04_robustness](../figures/en/supp04_robustness.svg) |
+| Execution and identification | [fig05_execution](../figures/en/fig05_execution.svg), [exp09_cost_service](../figures/en/exp09_cost_service.svg), [exp10_resource_information](../figures/en/exp10_resource_information.svg), [exp11_support_failures](../figures/en/exp11_support_failures.svg), [exp12_cost_identification](../figures/en/exp12_cost_identification.svg), [supp05_cost_service](../figures/en/supp05_cost_service.svg) |
+| Acquisition and engineering | [fig06_acquisition](../figures/en/fig06_acquisition.svg), [exp14_package_value](../figures/en/exp14_package_value.svg), [exp15_scenario_reduction](../figures/en/exp15_scenario_reduction.svg), [exp16_solver_stability](../figures/en/exp16_solver_stability.svg) |
+
+<!-- EXPERIMENT_NAV_END -->
+
 ## Baseline landscape and history length
 
 All nine frozen families under natural inputs and refit64 calibration. (a) CRPS on observed hours only. (b) Full-population Brier bounds in the same row order. (c) Prespecified 3/7-day context and 7-day structural sensitivities. 880 origins, 17 turbines, offsets 0/24/48/66 h. Neural models use three producer seeds; statistical controls use one producer with fixed rank templates. These are development comparisons, not a winner search.
