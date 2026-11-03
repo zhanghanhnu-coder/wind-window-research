@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="182mm" height="81.89999999999999mm" viewBox="0 0 1000 450"><title>为什么连续作业需要联合预测</title>
+<desc>Identical hourly probabilities can imply different uninterrupted work windows. In this two-scenario illustration, each hour has a 50% probability of being at or below the threshold. The probability that all six hours qualify is 50% on the left and 0% on the right. Rows are equally weighted scenarios; columns are consecutive hours. These are illustrative values, not experimental results.</desc>
+<rect x="0" y="0" width="1000" height="450" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<text x="500" y="31.32" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#202B33">逐小时概率相同</text>
+<text x="972" y="28.86" font-family="Microsoft YaHei, sans-serif" font-size="16.5" font-weight="400" text-anchor="end" fill="#687780">概念示意</text>
+<text x="250" y="81.64" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" text-anchor="middle" fill="#202B33">连续风况</text>
+<text x="138" y="120.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">1</text>
+<text x="186" y="120.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">2</text>
+<text x="234" y="120.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">3</text>
+<text x="282" y="120.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">4</text>
+<text x="330" y="120.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">5</text>
+<text x="378" y="120.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">6</text>
+<text x="70" y="121.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#687780">小时</text>
+<text x="101" y="157.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="end" fill="#687780">情景1</text>
+<text x="101" y="208.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="end" fill="#687780">情景2</text>
+<rect x="115" y="132" width="46" height="46" rx="0" fill="#E2EFF7" stroke="none" stroke-width="1.3"/>
+<rect x="163" y="132" width="46" height="46" rx="0" fill="#E2EFF7" stroke="none" stroke-width="1.3"/>
+<rect x="211" y="132" width="46" height="46" rx="0" fill="#E2EFF7" stroke="none" stroke-width="1.3"/>
+<rect x="259" y="132" width="46" height="46" rx="0" fill="#E2EFF7" stroke="none" stroke-width="1.3"/>
+<rect x="307" y="132" width="46" height="46" rx="0" fill="#E2EFF7" stroke="none" stroke-width="1.3"/>
+<rect x="355" y="132" width="46" height="46" rx="0" fill="#E2EFF7" stroke="none" stroke-width="1.3"/>
+<rect x="115" y="180" width="46" height="46" rx="0" fill="#D55E00" stroke="none" stroke-width="1.3"/>
+<rect x="163" y="180" width="46" height="46" rx="0" fill="#D55E00" stroke="none" stroke-width="1.3"/>
+<rect x="211" y="180" width="46" height="46" rx="0" fill="#D55E00" stroke="none" stroke-width="1.3"/>
+<rect x="259" y="180" width="46" height="46" rx="0" fill="#D55E00" stroke="none" stroke-width="1.3"/>
+<rect x="307" y="180" width="46" height="46" rx="0" fill="#D55E00" stroke="none" stroke-width="1.3"/>
+<rect x="355" y="180" width="46" height="46" rx="0" fill="#D55E00" stroke="none" stroke-width="1.3"/>
+<line x1="116" y1="244" x2="400" y2="244" stroke="#687780" stroke-width="2"/>
+<line x1="116" y1="236" x2="116" y2="251" stroke="#687780" stroke-width="1.6"/>
+<line x1="400" y1="236" x2="400" y2="251" stroke="#687780" stroke-width="1.6"/>
+<text x="258" y="278.96" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#202B33">连续 6 小时作业</text>
+<text x="258" y="336.88" font-family="Microsoft YaHei, sans-serif" font-size="32" font-weight="700" text-anchor="middle" fill="#0072B2">50%</text>
+<text x="258" y="368.96" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#202B33">完整窗口概率</text>
+<text x="750" y="81.64" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" text-anchor="middle" fill="#202B33">交替风况</text>
+<text x="638" y="120.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">1</text>
+<text x="686" y="120.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">2</text>
+<text x="734" y="120.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">3</text>
+<text x="782" y="120.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">4</text>
+<text x="830" y="120.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">5</text>
+<text x="878" y="120.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">6</text>
+<text x="570" y="121.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#687780">小时</text>
+<text x="601" y="157.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="end" fill="#687780">情景1</text>
+<text x="601" y="208.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="end" fill="#687780">情景2</text>
+<rect x="615" y="132" width="46" height="46" rx="0" fill="#E2EFF7" stroke="none" stroke-width="1.3"/>
+<rect x="663" y="132" width="46" height="46" rx="0" fill="#D55E00" stroke="none" stroke-width="1.3"/>
+<rect x="711" y="132" width="46" height="46" rx="0" fill="#E2EFF7" stroke="none" stroke-width="1.3"/>
+<rect x="759" y="132" width="46" height="46" rx="0" fill="#D55E00" stroke="none" stroke-width="1.3"/>
+<rect x="807" y="132" width="46" height="46" rx="0" fill="#E2EFF7" stroke="none" stroke-width="1.3"/>
+<rect x="855" y="132" width="46" height="46" rx="0" fill="#D55E00" stroke="none" stroke-width="1.3"/>
+<rect x="615" y="180" width="46" height="46" rx="0" fill="#D55E00" stroke="none" stroke-width="1.3"/>
+<rect x="663" y="180" width="46" height="46" rx="0" fill="#E2EFF7" stroke="none" stroke-width="1.3"/>
+<rect x="711" y="180" width="46" height="46" rx="0" fill="#D55E00" stroke="none" stroke-width="1.3"/>
+<rect x="759" y="180" width="46" height="46" rx="0" fill="#E2EFF7" stroke="none" stroke-width="1.3"/>
+<rect x="807" y="180" width="46" height="46" rx="0" fill="#D55E00" stroke="none" stroke-width="1.3"/>
+<rect x="855" y="180" width="46" height="46" rx="0" fill="#E2EFF7" stroke="none" stroke-width="1.3"/>
+<line x1="616" y1="244" x2="900" y2="244" stroke="#687780" stroke-width="2"/>
+<line x1="616" y1="236" x2="616" y2="251" stroke="#687780" stroke-width="1.6"/>
+<line x1="900" y1="236" x2="900" y2="251" stroke="#687780" stroke-width="1.6"/>
+<text x="758" y="278.96" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#202B33">连续 6 小时作业</text>
+<text x="758" y="336.88" font-family="Microsoft YaHei, sans-serif" font-size="32" font-weight="700" text-anchor="middle" fill="#D55E00">0%</text>
+<text x="758" y="368.96" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#202B33">完整窗口概率</text>
+<text x="500" y="413.12" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#687780">每个小时：不超阈值的概率均为 50%</text>
+<rect x="290" y="428" width="16" height="16" rx="0" fill="#E2EFF7" stroke="none" stroke-width="1.3"/>
+<text x="314" y="439.86" font-family="Microsoft YaHei, sans-serif" font-size="16.5" font-weight="400" text-anchor="start" fill="#202B33">不超阈值</text>
+<rect x="568" y="428" width="16" height="16" rx="0" fill="#D55E00" stroke="none" stroke-width="1.3"/>
+<text x="592" y="439.86" font-family="Microsoft YaHei, sans-serif" font-size="16.5" font-weight="400" text-anchor="start" fill="#202B33">超过阈值</text></svg>

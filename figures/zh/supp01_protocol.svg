@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="182mm" height="79.17mm" viewBox="0 0 1000 435"><title>按时间隔离训练与评价</title>
+<desc>Four chronological folds separate training, validation (Val), calibration (Cal) and evaluation. Evaluation periods are May–Jun, Jul–Aug, Sep–Oct and Nov–Dec; all are 2024 development data, not an independent year. Shapes show time roles, not sample counts. Normalization and graph construction use training data; calibration targets precede evaluation origins.</desc>
+<rect x="0" y="0" width="1000" height="435" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<text x="183.5" y="46.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">1月</text>
+<text x="250.5" y="46.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">2月</text>
+<text x="317.5" y="46.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">3月</text>
+<text x="384.5" y="46.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">4月</text>
+<text x="451.5" y="46.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">5月</text>
+<text x="518.5" y="46.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">6月</text>
+<text x="585.5" y="46.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">7月</text>
+<text x="652.5" y="46.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">8月</text>
+<text x="719.5" y="46.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">9月</text>
+<text x="786.5" y="46.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">10月</text>
+<text x="853.5" y="46.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">11月</text>
+<text x="920.5" y="46.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#687780">12月</text>
+<text x="24" y="115.8" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#202B33">第1折</text>
+<rect x="150" y="85" width="131" height="45" rx="0" fill="#BCD7E8" stroke="none" stroke-width="1.3"/>
+<text x="217.0" y="112.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">训练</text>
+<rect x="284" y="85" width="64" height="45" rx="0" fill="#D8CEEA" stroke="none" stroke-width="1.3"/>
+<text x="317.5" y="112.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">验证</text>
+<rect x="351" y="85" width="64" height="45" rx="0" fill="#F5D7BB" stroke="none" stroke-width="1.3"/>
+<text x="384.5" y="112.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">校准</text>
+<rect x="418" y="85" width="131" height="45" rx="0" fill="#B9DCD1" stroke="none" stroke-width="1.3"/>
+<text x="485.0" y="112.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">评价</text>
+<text x="24" y="183.8" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#202B33">第2折</text>
+<rect x="150" y="153" width="265" height="45" rx="0" fill="#BCD7E8" stroke="none" stroke-width="1.3"/>
+<text x="284.0" y="180.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">训练</text>
+<rect x="418" y="153" width="64" height="45" rx="0" fill="#D8CEEA" stroke="none" stroke-width="1.3"/>
+<text x="451.5" y="180.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">验证</text>
+<rect x="485" y="153" width="64" height="45" rx="0" fill="#F5D7BB" stroke="none" stroke-width="1.3"/>
+<text x="518.5" y="180.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">校准</text>
+<rect x="552" y="153" width="131" height="45" rx="0" fill="#B9DCD1" stroke="none" stroke-width="1.3"/>
+<text x="619.0" y="180.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">评价</text>
+<text x="24" y="251.8" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#202B33">第3折</text>
+<rect x="150" y="221" width="399" height="45" rx="0" fill="#BCD7E8" stroke="none" stroke-width="1.3"/>
+<text x="351.0" y="248.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">训练</text>
+<rect x="552" y="221" width="64" height="45" rx="0" fill="#D8CEEA" stroke="none" stroke-width="1.3"/>
+<text x="585.5" y="248.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">验证</text>
+<rect x="619" y="221" width="64" height="45" rx="0" fill="#F5D7BB" stroke="none" stroke-width="1.3"/>
+<text x="652.5" y="248.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">校准</text>
+<rect x="686" y="221" width="131" height="45" rx="0" fill="#B9DCD1" stroke="none" stroke-width="1.3"/>
+<text x="753.0" y="248.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">评价</text>
+<text x="24" y="319.8" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#202B33">第4折</text>
+<rect x="150" y="289" width="533" height="45" rx="0" fill="#BCD7E8" stroke="none" stroke-width="1.3"/>
+<text x="418.0" y="316.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">训练</text>
+<rect x="686" y="289" width="64" height="45" rx="0" fill="#D8CEEA" stroke="none" stroke-width="1.3"/>
+<text x="719.5" y="316.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">验证</text>
+<rect x="753" y="289" width="64" height="45" rx="0" fill="#F5D7BB" stroke="none" stroke-width="1.3"/>
+<text x="786.5" y="316.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">校准</text>
+<rect x="820" y="289" width="131" height="45" rx="0" fill="#B9DCD1" stroke="none" stroke-width="1.3"/>
+<text x="887.0" y="316.28" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#202B33">评价</text>
+<rect x="150" y="354" width="17" height="17" rx="0" fill="#BCD7E8" stroke="none" stroke-width="1.3"/>
+<text x="175" y="366.86" font-family="Microsoft YaHei, sans-serif" font-size="16.5" font-weight="400" text-anchor="start" fill="#202B33">训练</text>
+<rect x="345" y="354" width="17" height="17" rx="0" fill="#D8CEEA" stroke="none" stroke-width="1.3"/>
+<text x="370" y="366.86" font-family="Microsoft YaHei, sans-serif" font-size="16.5" font-weight="400" text-anchor="start" fill="#202B33">验证</text>
+<rect x="550" y="354" width="17" height="17" rx="0" fill="#F5D7BB" stroke="none" stroke-width="1.3"/>
+<text x="575" y="366.86" font-family="Microsoft YaHei, sans-serif" font-size="16.5" font-weight="400" text-anchor="start" fill="#202B33">校准</text>
+<rect x="770" y="354" width="17" height="17" rx="0" fill="#B9DCD1" stroke="none" stroke-width="1.3"/>
+<text x="795" y="366.86" font-family="Microsoft YaHei, sans-serif" font-size="16.5" font-weight="400" text-anchor="start" fill="#202B33">评价</text>
+<text x="500" y="418.96" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#687780">四个评价段均属于开发资料</text></svg>

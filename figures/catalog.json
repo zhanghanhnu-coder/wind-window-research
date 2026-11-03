@@ -1,0 +1,184 @@
+[
+  {
+    "id": "exp01_baseline_landscape",
+    "title_zh": "完整基线与历史长度",
+    "title_en": "Baseline landscape and history length",
+    "caption_zh": "自然输入、refit64校准下全部九家族。(a)仅已观测小时CRPS点值。(b)相同行序的全体Brier界。(c)预定3/7日历史及7日结构敏感性。880起报、17机组、偏移0/24/48/66h。神经模型三生产种子，统计基线单生产者配固定秩模板，均为开发对照，非选冠军。",
+    "caption_en": "All nine frozen families under natural inputs and refit64 calibration. (a) CRPS on observed hours only. (b) Full-population Brier bounds in the same row order. (c) Prespecified 3/7-day context and 7-day structural sensitivities. 880 origins, 17 turbines, offsets 0/24/48/66 h. Neural models use three producer seeds; statistical controls use one producer with fixed rank templates. These are development comparisons, not a winner search."
+  },
+  {
+    "id": "exp02_joint_evidence",
+    "title_zh": "联合依赖：干预、阈值、距离与强基线",
+    "title_en": "Joint dependence: intervention, thresholds, distance and strong baseline",
+    "caption_zh": "全880起报的冻结边际保持干预。(a)时间/空间/同时打散，空间打散单机精确零为负控。(b)阈值8/10/12的主单机时间、辅助多机共同空间对照。(c)阈值10各窗口偏移单机时间效果。(d)阈值10相同耦合下图减类比，正值支持类比。先逐种子及排列算损失再平均；有限打散不证明精确独立。",
+    "caption_en": "Frozen marginal-preserving intervention results, all 880 origins. (a) Time/space/both shuffles; the spatial one-turbine zero is a negative control. (b) Primary one-turbine/time and auxiliary joint-event/space contrasts at raw thresholds 8/10/12. (c) One-turbine time contrast at each window offset, threshold 10. (d) Graph minus analog under identical coupling, threshold 10; positive favors the analog. Seed=mean and repeat=mean average per-seed/per-permutation losses. Finite shuffling does not establish exact independence."
+  },
+  {
+    "id": "exp03_missing_inputs",
+    "title_zh": "两种输入缺测压力与完整输入子群",
+    "title_en": "Two missing-input mechanisms and the complete-input cohort",
+    "caption_zh": "(a–b)单套冻结训练期联合缺测模板，保留自然输入refit64校准；可见率取末24h，CRPS仅取已观测目标小时。(c–d)另一个同步0/6/12/24h中断实验，限定自然输入完整392起报、单机6h事件。标签和自然输入校准不变。0h各模型自身差精确为零；24h每fold/model/seed输出跨起报常量，为固定先验而非实时空间信息。",
+    "caption_en": "Panels (a–b): the single frozen training-period joint mask, with natural-input refit64 calibration; visibility uses the last 24 h and CRPS uses observed target hours. Panels (c–d): the separate synchronous 0/6/12/24 h outage test on 392 origins with complete natural inputs, single-turbine 6 h events. Labels and natural calibration stay unchanged. At 0 h all own-score differences are exactly zero. At 24 h, outputs are constant across origins within fold/model/seed: a fixed prior, not real-time spatial information."
+  },
+  {
+    "id": "exp04_rolling_calibration",
+    "title_zh": "滚动校准的季节评分与决策取舍",
+    "title_en": "Rolling calibration: seasonal score and decision trade-offs",
+    "caption_zh": "冻结预测以原始float64真值复评的滚动28日与前月固定校准。(a)各双月fold单机和多机共同Brier界。(b)总体错误数差除全部预测记录，不是条件分类率。(c)0.8概率门槛的单机接受窗口构成，也除全部记录。前月固定为冻结前月仿射校准；滚动28日为仅用成熟历史每周更新的28日仿射校准，均不是Residual28或refit64。",
+    "caption_en": "Rolling28 versus FixedMonth on frozen forecasts re-evaluated with original float64 labels. (a) One- and multi-turbine Brier bounds by bimonthly fold. (b) ALL error-count differences divided by all forecast records; false alarms and missed windows use the same denominator, not conditional classification rates. (c) Single-turbine accepted-window composition at probability threshold 0.8, also divided by all records. FixedMonth is frozen preceding-month affine calibration; Rolling28 is weekly updated 28-day affine calibration using matured history. These are not Residual28 and not refit64."
+  },
+  {
+    "id": "exp05_label_precision",
+    "title_zh": "标签精度与证据传播",
+    "title_en": "Label precision and evidence propagation",
+    "caption_zh": "三值标签使用原始float64严格小时真值，已知超限优先于缺测。7条单机窗口记录对应2个去重物理窗口，从成功修正为失败；共同窗口标签不变。c图为自然输入下校准按原始精度重拟合后，各既定fold与生产种子的窗口概率最大变化，与仅重评标签区分。部分5分钟记录可将494个未知机组小时固定为失败，但只与1个匹配物理窗口相交，对应3条秩种子记录。不完整且未超限的记录不能确证成功。",
+    "caption_en": "Three-state labels use original float64 strict-hour truth: known exceedance takes priority over missingness. Seven single-window records, corresponding to two unique physical windows, change from pass to fail; group labels are unchanged. Panel c summarizes the maximum natural-input probability change over frozen folds and producer seeds when historical calibration is refitted at raw precision, separately from the evaluation-only label correction. Partial five-minute evidence fixes 494 unknown turbine–hours as failed but intersects only one matched physical window (three rank rows). It cannot confirm pass from incomplete non-exceeding records."
+  },
+  {
+    "id": "exp06_residual_calibration",
+    "title_zh": "残差校准与窗口接受的取舍",
+    "title_en": "Residual calibration and acceptance trade-offs",
+    "caption_zh": "固定预测以raw64标签重评，Residual28与Rolling28_Base49比较。本分支B/W28身份不同于执行实验的FixedMonth/Rolling28。a图使用共享标签配对识别界，不绘目标分块外包。b–c图展示全部59840条单机窗口在种子平均概率≥0.8下的决策。G28按过去平均表现选校正力度，K6使用相似风况与预测分歧。接受后的已知成功、失败和未知分开保留。Brier先逐种子计分再平均，决策以平均概率阈值化；Residual28不属于执行交叉臂。",
+    "caption_en": "Residual28 is compared with Rolling28_Base49 using frozen predictions reevaluated with raw64 labels. This branch uses different B/W28 aliases from FixedMonth/Rolling28 in the execution study. Panel a uses shared-label paired identification bounds, not target-block sampling envelopes. Panels b–c show all-59,840 single-window decisions at mean probability ≥0.8. G28 selects correction strength by past average performance; K6 uses similar wind state and forecast disagreement. Known success, failure and unresolved accepted records remain separate. Brier is averaged after scoring each seed; decisions threshold the seed-mean probability. Residual28 is not an execution-cross arm."
+  },
+  {
+    "id": "exp07_sample_selection",
+    "title_zh": "队列构成与观测支持",
+    "title_en": "Cohort composition and observation support",
+    "caption_zh": "预测研究共880起报，其中392起报在此前24小时内17机组输入完整。执行研究另有44起报，其中15起报的72小时任务节点天气完整。b图按实际日历月而非双月fold统计。c图预测记录跨偏移汇总，数量大于去重物理窗口。d图小时观测率和匹配标签已知率分母不同。完整案例选择仅作描述，不暗示建立缺测机制模型或完成外部验证。",
+    "caption_en": "The prediction study has 880 origins; the 392-origin subset has all 17 turbines observed throughout the prior 24 h. The execution study separately has 44 origins, of which 15 have complete task-node weather over 72 h. Panel b uses calendar months, rather than the two-month folds. Record counts in panel c pool offsets and therefore exceed distinct physical-window counts. Panel d reports hour observation rates and matched-label known rates, whose denominators differ. Complete-case selection is descriptive; no missingness model or external validation is implied."
+  },
+  {
+    "id": "exp08_update_diagnostics",
+    "title_zh": "同窗更新机制与影响诊断",
+    "title_en": "Matched update mechanisms and influence",
+    "caption_zh": "四格将类比/图模型与初始/当前预报在同一合格任务窗口上匹配。a图为类比减图的Brier差；b–d图为更新改善量之差，正值表示图改善更多。start0为预报未变负控。44个留一起报结果全部按时间展示。秩种子使用相同天气，不是独立重复；事件权重改变估计目标，部分证据只固定已知超限。仍需结合已有留fold图：剔除9–10月后交互跨零。所示为条件识别范围，不是置信区间。",
+    "caption_en": "The four matched cells use analog/graph and initial/current probabilities on the same eligible task windows. Panel a reports analog minus graph; panel b and panels c–d report the difference in update improvements, positive when graph improves more. Start0 is an unchanged-forecast control. All 44 leave-one-origin results are retained in chronological order. Rank sensitivity uses the same weather, not independent replications. Event weighting changes the estimand; partial evidence fixes only known exceedances. The existing leave-fold figure remains essential: removing Sep–Oct makes the interaction cross zero. Bounds are conditional identification ranges, not confidence intervals."
+  },
+  {
+    "id": "exp09_cost_service",
+    "title_zh": "费用、服务与季节",
+    "title_en": "Cost, service and season",
+    "caption_zh": "类比减图模型，固定B资源及动作、lookahead72、罚损倍数1。展示全44起报、四个双月fold（各11）及完整天气15起报辅助子集。端帽为可行端点而非置信限；费用与成功任务数分别优化，不能拼成联合矩形。灰色完整子集界退化为确定值。尝试量与操作任务小时包含成功、失败和结局未知的尝试，单位分开。每起报内平均3套秩；完整子集在四fold分布为2/1/4/8。",
+    "caption_en": "AnalogFixed minus GraphFixed, fixed B resources/actions, lookahead72 and penalty multiplier 1. All 44 origins, four bimonthly folds (11 origins each), and the auxiliary 15 complete-weather origins are shown. Caps mark feasible endpoints, not confidence limits. Cost and successful-task bounds are optimized separately and are not a joint rectangle. Gray complete-subset endpoints collapse to exact values. Attempted tasks and operation task-hours count successful, failed and unknown attempts; they have separate units. Three seeds are averaged within each origin; the complete subset is seasonally selected (2/1/4/8 origins)."
+  },
+  {
+    "id": "exp10_resource_information",
+    "title_zh": "预订与信息层次",
+    "title_en": "Booking and information layers",
+    "caption_zh": "完整保留2种校准×2种执行器×2层预订的八臂，全部44起报采用严格真值复评。固定/滚动校准为B（FixedMonth）/W28（Rolling28），两者都每6小时接收当前预报；即时/72小时为myopic/lookahead72。蓝/橙范围是可实施的保存执行费用，灰色是对应预订下的理想追补后见参照，不是在线竞争策略。这些为保存的粗费用界，不是共享小时配对因素效应或置信区间。C比较B资源向量与W28自身预订，船/人员二元预订及备件数均表示平均预订数量。D尝试数包含失败及结局未知的启动。自身预订改变资源，不能解释为纯校准作用。",
+    "caption_en": "The complete 2 calibrations × 2 executors × 2 booking layers are preserved on all 44 strict-truth origins. Fixed/rolling calibration denote B (FixedMonth)/W28 (Rolling28); both receive current forecasts every 6 h; one-step/72 h denote myopic/lookahead72. Blue/orange ranges are implementable saved execution costs; gray ranges are ideal-recourse hindsight references under the corresponding booking, not online competitors. These are saved coarse cost ranges, not shared-hour paired treatment effects or confidence intervals. C compares the B resource vector with W28 own booking, with seed averaging inside origins; binary boat/crew quantities and spare counts are displayed as mean booked units. D counts attempts, including failures and unknown results. Own booking changes resources and cannot be interpreted as a pure calibration effect."
+  },
+  {
+    "id": "exp11_support_failures",
+    "title_zh": "情景支持失配",
+    "title_en": "Scenario-support failures",
+    "caption_zh": "类比与图模型采用严格float64真值复评。A/B分别为全部情景可行（p=1）且结局已知窗口中的失败，以及全部情景不可行（p=0）且结局已知窗口中的成功；标注分子/已知分母，另列未知数。初始与更新队列不是相同总体。C以保存固定动作费用界对比冻结情景支持费用范围：实色段为确证越界，斜纹延伸为额外可能越界，不重复计数。D保留执行费用未确定的案例。每臂132个起报—种子案例来自44起报，重复窗口与种子不是独立天气。此图诊断支持失配，不给覆盖概率保证。",
+    "caption_en": "Strict float64 truth re-evaluation for AnalogFixed and GraphFixed. A/B show failure among known all-scenario-feasible (p=1) windows and success among known all-scenario-infeasible (p=0) windows; labels give numerator/known denominator, with unknown counts separately reported. Initial and current queues are not identical populations. C compares saved fixed-action execution cost bounds with the frozen scenario-support cost range: solid segments are certified outside support; hatched extensions are additional possible cases, not an independent category to add twice. D retains cases with unresolved execution cost. Each executed arm has 132 origin-seed cases from 44 origins; seeds and repeated windows are not independent weather. This diagnoses support, not calibrated coverage probabilities."
+  },
+  {
+    "id": "exp12_cost_identification",
+    "title_zh": "共享天气与罚损方向识别",
+    "title_en": "Shared-weather and penalty identification",
+    "caption_zh": "A保留七项保存比较：校准变化为固定执行器下W28（Rolling28）减B（FixedMonth），两者均每6小时接收当前预报；规划变化为固定校准下lookahead72减myopic；类比对比为AnalogFixed减GraphFixed；最后整体变化还改变自身预订。方块/圆点是粗界/共享小时界的宽度，不是效应点估计。七项共享界都跨零。B/C采用主比较固定动作精确式D=C+λP，C=2045/3168，P范围[−530/11,2060/33]。下界精确根λ*=409/30528；0≤λ<λ*时类比确定更贵，根处下端点为0，根以上方向无法识别。所有λ≥0的上界均为正，因此不能保证类比更省费用。不重新优化，也不缩放预订、运营或迟开工收费。",
+    "caption_en": "A preserves all seven saved comparisons: calibration changes are W28 (Rolling28) minus B (FixedMonth) at fixed executors; both receive current forecasts every 6 h; planning changes are lookahead72 minus myopic at fixed calibrations; analog contrasts are AnalogFixed minus GraphFixed; the final combined row changes own booking too. Squares/circles show coarse/shared-hour widths, not effect estimates. All seven shared bounds cross zero. B/C use the exact primary fixed-action identity D=C+λP with C=2045/3168 and P in [−530/11,2060/33]. The exact lower-bound root is λ*=409/30528. Analog costs strictly more for 0≤λ<λ*, the lower endpoint is zero at the root, and direction is unresolved above it. The upper bound remains positive for all λ≥0, so analog savings are never guaranteed. No reoptimization or scaling of booking/operating/late-start charges is performed."
+  },
+  {
+    "id": "exp14_package_value",
+    "title_zh": "单个连续补录包的价值",
+    "title_en": "Value of individual recovery packages",
+    "caption_zh": "完整保留同一机组必要小时组成的88个最大连续段，每段均对当前主费用范围宽110.6061单独评价。保证不能相加，没有求最优多包组合。A为总保证缩窄，B为该值除以段长。P026含6条、缩窄3.4091；P027含18条、同为3.4091；P029仅1条、缩窄3.3333。25个零保证包在特定返回状态下仍可能有帮助，0仅指最坏保证，不证明没有信息。重合点可能覆盖，CSV保留全部88段；证书适用需请求状态全部解析。",
+    "caption_en": "All 88 maximal consecutive essential-hour packages on the same turbine are retained. Each package was queried alone against the same current primary width 110.6061; guarantees are not additive and no optimal multi-package search was performed. A shows total guaranteed reduction; B divides that value by package length. P026: 6 records, reduction 3.4091; P027: 18 records, same 3.4091; P029: 1 record, reduction 3.3333. The 25 zero-guarantee packages can still help for particular returned states; zero is a worst-case guarantee, not proof of no information. Coincident points overlap; the CSV retains every package. All requested states must resolve for the certificate to apply."
+  },
+  {
+    "id": "exp15_scenario_reduction",
+    "title_zh": "情景等价归并与支配支持删减",
+    "title_en": "Scenario equivalence and dominated-support reduction",
+    "caption_zh": "来自scenario_equivalence_v1的32次和support_dominance_v1的16次冻结实例工程验证。四开发fold各首末实例共8个，2算法，历史228情景、rho=0.25。归并精确性以全部情景追补差异仅通过完整任务可行向量进入为条件，并保留所有名义零质量组。支配删减仅移除严格零质量且具有已核查保留证人的组，核验时恢复原支持。四个末例使用非均匀质量。(a)情景计数与算法无关。(b)行序与(a)一致，全部成功失败均显示。(c)仅两侧保存状态均COMPLETE且源证书通过的配对给出目标差，失败配对不造目标差。差值为数值残差，非统计区间。不比较跨轮时间；历史标签费用未更新，因此不加入raw64当前策略证据。",
+    "caption_en": "Frozen-instance engineering validation from scenario_equivalence_v1 (32 runs) and support_dominance_v1 (16 runs). Eight fixed first/last cases across the four development folds, two algorithms, historical 228-scenario inputs and rho=0.25. Grouping is exact only because all scenario-dependent recourse enters through the entire task feasibility vector; it retains all zero-nominal-mass classes. Dominance pruning removes only exactly zero-mass classes with checked retained witnesses and restores the original support for verification. The four last-position cases use nonuniform mass. (a) Counts are algorithm-invariant. (b) Every success/failure is shown with rows matching (a). (c) Each dot is one comparison whose two saved runs are COMPLETE and whose source certificates pass; failed pairs have no objective difference. Differences are numerical residuals, not statistical intervals. Historical cross-round timings are not compared. These objectives retain their historical labels and costs and do not enter the raw64 current-policy evidence."
+  },
+  {
+    "id": "exp16_solver_stability",
+    "title_zh": "冻结输入的有界式求解稳定性",
+    "title_en": "Bounded-formulation solver stability on frozen inputs",
+    "caption_zh": "冻结实例工程验证，仅使用bounded_distribution_v1根目录runs.csv/comparisons.csv/summary.csv的16个保存请求，不混入后续重复轮。M07_235/M09_206两实例各有原权重与UI归一化权重表示，2算法（列与约束生成、完整式）、原式/有界式，rho=0.25。保留全部状态：原式5/8完成，有界式8/8完成。两侧保存证书均通过的5配对，其有界减原式目标在CSV中恰为0；3个原式求解失败明确不配对，不给其伪造零目标差。该结果只支持指定输入及形式。后续费用尺度护栏拒绝小于0.0001的不支持正货币量，任意极小rho数值稳定仍不在此证据内。未修正历史标签费用，不将工程目标纳入当前策略排名。不据此推断时间倍数或一般完成概率。",
+    "caption_en": "Frozen-instance engineering validation, using only the root runs.csv/comparisons.csv/summary.csv of bounded_distribution_v1 (16 saved requests, not the subsequent repeat run). Two fixed cases M07_235/M09_206 each use raw and UI-normalized weight representations, two algorithms (column-and-constraint generation and full formulation), and original/bounded formulations, rho=0.25. All outcomes are retained: original 5/8 complete, bounded 8/8 complete. In the five pairs with passing saved certificates on both sides, bounded minus original objective is exactly zero in the CSV. Three original solver failures are explicitly unpaired, never assigned a zero objective. This supports only the fixed formulation/inputs. The later cost-scale guard rejects unsupported positive monetary quantities below 0.0001; arbitrary small-rho numerical stability remains outside this evidence. Historical truth/cost definitions are not revised and these engineering objectives do not rank current policies. No time comparison or general completion probability is inferred."
+  },
+  {
+    "id": "fig01_motivation",
+    "title_zh": "为何需要联合预测",
+    "title_en": "Why joint predictions matter",
+    "caption_zh": "逐小时概率相同，不代表连续作业窗口概率相同。两组示意中，每小时均有50%概率不超阈值，但连续六小时全部满足条件的概率分别为50%和0%。行是等权情景，列是连续小时；图中数值仅作原理演示，不是实验结果。",
+    "caption_en": "Identical hourly probabilities can imply different uninterrupted work windows. In this two-scenario illustration, each hour has a 50% probability of being at or below the threshold. The probability that all six hours qualify is 50% on the left and 0% on the right. Rows are equally weighted scenarios; columns are consecutive hours. These are illustrative values, not experimental results."
+  },
+  {
+    "id": "fig02_workflow",
+    "title_zh": "联合预测、窗口概率与受约束调度",
+    "title_en": "Joint prediction, windows and constrained scheduling",
+    "caption_zh": "实际实现的机制。(a)固定邻居汇聚与门控因果时序编码将24小时三通道观测转成每机组每小时19个有序的小时最大值代理取值，再经校准与历史残差秩耦合形成57条等权联合情景。(b)在每个候选开工时点，p为任务所有小时均满足阈值的情景比例；三情景、六小时例子仅用于演示，不是测得的预报。实际任务持续6或12小时。(c)在可行任务/开工选择上，最大化期望避免罚损减作业成本之和，遵守固定资源及机组约束；仅承诺当前开工，每6小时重排。(d)虚线只把结果证据用于回顾评价。缺测真值给出识别上下界，不是置信区间，阈值单位仍待核实。",
+    "caption_en": "Implemented mechanism. (a) Fixed-neighbor aggregation and a gated causal temporal encoder map 24 h of three-channel observations to 19 ordered hourly-maximum proxy values per turbine. Calibration and historical residual-rank coupling produce 57 equally weighted joint paths. (b) At a task start, p is the fraction of paths satisfying the threshold at every required hour; the three-path, six-hour example is illustrative, not a measured forecast. Actual task durations are 6 or 12 h. (c) Over the feasible task/start choices, planning maximizes the sum of expected avoided task penalties minus task costs, respecting fixed resource and turbine constraints; only current starts are committed and planning repeats every 6 h. (d) Dashed links use outcome evidence for retrospective evaluation only. Missing truth yields identification bounds, not confidence intervals. Threshold units remain unverified."
+  },
+  {
+    "id": "fig03_baselines",
+    "title_zh": "基线比较",
+    "title_en": "Baseline comparisons",
+    "caption_zh": "单机6h窗口图模型减对照的Brier界。图、全场均值及自身历史模型共用24h输入；气候与类比基线用更长历史。自然输入、refit64校准，880起报、17机组、偏移0/24/48/66h。零表示损失相同，区间不是置信区间。",
+    "caption_en": "Graph minus comparison Brier bounds for single-turbine 6 h windows. The graph, farm-mean and own-history models share 24 h inputs; climate and analog baselines use longer histories. Natural inputs, refit64 calibration, 880 origins, 17 turbines and offsets 0/24/48/66 h. Zero means equal loss; bounds are not confidence intervals."
+  },
+  {
+    "id": "fig04_dependence",
+    "title_zh": "依赖作用与季节反例",
+    "title_en": "Dependence and seasonal reversal",
+    "caption_zh": "边际不变的关键依赖对照选集。(a)时间打散影响单机窗口；空间打散影响多机共同窗口，单机窗口精确不变。(b)原结构减时间打散的双月fold结果，9–10月方向反转。图模型、原始阈值10、合并偏移、880起报。识别界不是置信区间。",
+    "caption_en": "Selected dependence tests with unchanged marginals. (a) Time shuffling changes one-turbine windows; space shuffling changes multi-turbine windows but leaves one-turbine windows exactly unchanged. (b) Original minus time-shuffled Brier across bimonthly folds: Sep–Oct reverses direction. Graph model, raw threshold 10, pooled offsets, 880 origins. Bounds are not confidence intervals."
+  },
+  {
+    "id": "fig05_execution",
+    "title_zh": "校准与规划费用证据",
+    "title_en": "Calibration and planning cost evidence",
+    "caption_zh": "所有费用差识别范围均跨零。滚动/固定校准分别为Rolling28/FixedMonth，两者均每6小时接收当前预报；图模型为GraphFixed（即FixedMonth），类比为112日历史的AnalogFixed；即时/72小时规划分别为myopic/lookahead72。各行均为前者减后者，固定B资源与保存动作，44起报、每起报3套秩。线段不是置信区间。主比较为72小时规划下类比减图模型，范围[−47.5363,63.0698]。",
+    "caption_en": "Every cost-difference bound crosses zero. Rolling/fixed calibration denote Rolling28/FixedMonth; both receive current forecasts every 6 h; Graph model denotes GraphFixed (= FixedMonth), and analog denotes AnalogFixed (112-day history). One-step/72 h planning denote myopic/lookahead72. Each row is first minus second, conditional on fixed B resources and saved actions, over 44 origins with three rank seeds. Lines are shared-weather identification bounds, not confidence intervals. The analog–Graph model 72 h comparison is primary; its bound is [−47.5363, 63.0698]."
+  },
+  {
+    "id": "fig06_acquisition",
+    "title_zh": "定向补录的价值",
+    "title_en": "Value of targeted data retrieval",
+    "caption_zh": "主比较为类比减图模型费用差，72小时规划、B资源与动作固定。(a)共享物理天气使范围宽度从186.9697降至110.6061，但当前范围[−47.5363,63.0698]仍跨零。(b)三种固定请求排序中，费用影响优先排序（coefficient_sensitivity）补录48个机组×小时状态后最坏剩余宽为71.1364；只有全部48个状态被有效证据解析，才保证至少缩窄35.6849%。每个状态是一台机组在一个小时的天气，不是连续48小时；目前没有新增观测，实际费用范围不变。",
+    "caption_en": "Primary AnalogFixed minus GraphFixed cost comparison, 72 h planning and fixed B resources/actions. (a) Enforcing shared physical weather reduces width from 186.9697 to 110.6061; the current bound [−47.5363,63.0698] still crosses zero. (b) Three fixed request orders; cost-impact-first ordering (coefficient_sensitivity) at budget 48 yields worst remaining width 71.1364, a guaranteed reduction of at least 35.6849% only if all 48 states are resolved by valid evidence. One state is one turbine at one hour, not a continuous hour; no new observations have arrived and the actual bound is unchanged."
+  },
+  {
+    "id": "supp01_protocol",
+    "title_zh": "时间隔离规程",
+    "title_en": "Chronological protocol",
+    "caption_zh": "四折均按时间顺序分开训练、验证、校准与评价，评价段依次为5–6、7–8、9–10、11–12月。全部来自2024开发资料，不是独立年度外验。色块表达时间用途，不代表样本数；标准化和图构建使用训练资料，校准目标先于评价起报。",
+    "caption_en": "Four chronological folds separate training, validation (Val), calibration (Cal) and evaluation. Evaluation periods are May–Jun, Jul–Aug, Sep–Oct and Nov–Dec; all are 2024 development data, not an independent year. Shapes show time roles, not sample counts. Normalization and graph construction use training data; calibration targets precede evaluation origins."
+  },
+  {
+    "id": "supp02_dependence_design",
+    "title_zh": "依赖干预原理",
+    "title_en": "Dependence interventions",
+    "caption_zh": "联合结构干预示意。每个小矩阵有两个等权情景、六个连续小时；浅蓝不超阈值，橙色超阈值。“单机”要求A机组完整六小时满足，“两机共同”要求A、B在相同六小时均满足。每种干预保持逐小时边际取值，空间打散还保留单机轨迹。正式实验使用57情景及三次固定打散，非图中两个示意情景。",
+    "caption_en": "Dependence interventions shown as two-scenario illustrations. Each grid has two equally weighted scenarios and six consecutive hours; blue cells are at/below the threshold and orange cells exceed it. Single denotes the full six-hour window at A; Both requires the same window at A and B. Every intervention preserves per-hour marginal values. Space shuffling preserves single-turbine trajectories. The real experiment uses 57 scenarios and three fixed shuffle repetitions, not the two illustrated paths."
+  },
+  {
+    "id": "supp03_updates",
+    "title_zh": "更新收益及其异质性",
+    "title_en": "Forecast updates and heterogeneity",
+    "caption_zh": "相同目标上的匹配更新。(a)两方法更新后均改善。(b)图模型的额外改善在删除9–10月后跨零。原始float64、共享未知小时、等起报权重，44起报、9,150种子窗口。44留一起报与三单种子对照全正。这是影响诊断，非独立验证；区间不是置信区间。",
+    "caption_en": "Matched updates on the same targets. (a) Both methods improve after updating. (b) The graph model’s extra improvement crosses zero when Sep–Oct is removed. Raw float64, shared unknown hours and equal-origin weights; 44 origins and 9,150 seed windows. All 44 leave-one-origin and three single-seed contrasts stay positive. These are influence checks, not independent validation; bounds are not confidence intervals."
+  },
+  {
+    "id": "supp04_robustness",
+    "title_zh": "阈值与缺测稳健性",
+    "title_en": "Threshold and outage robustness",
+    "caption_zh": "相对优势与自身恶化，单机6h、全880起报。(a)原始阈值8/10/12及0/6/12/24h同步输入遮挡下图减均值损失。(b)各模型自身缺测减自然输入损失。输入完整392起报对照也支持图模型，数值保存在数据文件。自然输入校准冻结。24h全零输出是固定先验，非实时空间证据。零表示损失相同；区间不是置信区间。",
+    "caption_en": "Relative advantage versus absolute deterioration, single-turbine 6 h windows, all 880 origins. (a) Graph minus farm-mean loss at raw thresholds 8/10/12 and after 0/6/12/24 h synchronous input masking. (b) Each model’s own missing-minus-natural loss. Complete-input 392-origin checks also favor Graph and are retained in the data file. Natural-input calibration is frozen. At 24 h, zero inputs yield a fixed prior, not real-time spatial evidence. Zero means equal loss; bounds are not confidence intervals."
+  },
+  {
+    "id": "supp05_cost_service",
+    "title_zh": "费用敏感性与任务状态",
+    "title_en": "Cost sensitivity and task outcomes",
+    "caption_zh": "类比与图模型采用72小时规划，B资源和保存动作固定，全部44起报×3套秩。(a)仅未完成/失败罚损乘以横轴非负倍数，预订和整个运营费用（包括迟开工收费）不变。阴影为精确费用界，不是置信带，也没有重新优化策略。任何非负权重均不能保证类比更省费用。(b)保留四类平均任务数。成功任务数差的范围为[−0.4167,0.4015]，与费用分别优化。",
+    "caption_en": "AnalogFixed versus GraphFixed, 72 h planning, fixed B resources and saved actions, all 44 origins × three rank seeds. (a) Only nonnegative unmet/failed-task penalties are multiplied by the displayed weights; booking and entire operating costs, including late-start charges, stay fixed. Shading shows exact cost bounds, not a confidence band or reoptimized policies. No nonnegative weight guarantees analog savings. (b) All four mean task outcomes are retained. The successful-task difference bound is [−0.4167,0.4015], separately optimized from cost."
+  }
+]

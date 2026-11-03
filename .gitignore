@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+private_data/
+artifacts/
+*.pkl
+*.npz
+*.npy
+*.pt
+*.pth
+*.xlsx
+*.xls
+*.parquet
+*.log

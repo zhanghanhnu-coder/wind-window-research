@@ -1,0 +1,6 @@
+comparison,lower,upper,metric,scope
+graph_minus_mean,-0.006691,-0.004739,Brier,development pooled
+original_minus_time_shuffle,-0.069800,-0.036301,Brier,development pooled
+update_interaction,0.046410,0.084210,Brier improvement,44 origins
+analog_minus_graph_cost,-47.536301,63.069760,model cost,44 origins
+analog_minus_graph_success,-0.416667,0.401515,successful tasks,44 origins
